@@ -1,0 +1,3 @@
+.bazel/gensrc/java
+.bazel/javadeps
+.bazel/gensrc/javatests

@@ -1,0 +1,3 @@
+# .bazelrc
+build --define=env=dev
+build:prod --define=env=prod
