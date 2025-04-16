@@ -1,0 +1,6 @@
+# Bazel out files
+bazel-*
+bazel-*/**
+
+# IntelliJ IDEA project files
+.ijwb
