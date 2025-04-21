@@ -5,3 +5,7 @@ bazel-*/**
 # IntelliJ IDEA project files
 .ijwb
 .idea/
+
+
+**/dist
+**/node_modules

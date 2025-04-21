@@ -57,5 +57,37 @@ pip.parse(
 use_repo(pip, "pypi")
 
 # Rules for building and testing TypeScript and JavaScript code
-# https://github.com/bazel-contrib/rules_nodejs
+bazel_dep(name = "rules_apple", version = "3.20.1")
+bazel_dep(name = "aspect_rules_js", version = "2.3.5")
+bazel_dep(name = "aspect_rules_swc", version = "2.4.1")
+bazel_dep(name = "aspect_rules_ts", version = "3.5.2")
+bazel_dep(name = "aspect_rules_webpack", version = "0.17.0")
 bazel_dep(name = "rules_nodejs", version = "6.3.4")
+
+node = use_extension("@rules_nodejs//nodejs:extensions.bzl", "node", dev_dependency = True)
+node.toolchain(node_version = "20.13.1")
+
+pnpm = use_extension("@aspect_rules_js//npm:extensions.bzl", "pnpm", dev_dependency = True)
+use_repo(pnpm, "pnpm")
+
+npm = use_extension("@aspect_rules_js//npm:extensions.bzl", "npm", dev_dependency = True)
+npm.npm_translate_lock(
+    name = "npm",
+    npmrc = "//:.npmrc",
+    pnpm_lock = "//:pnpm-lock.yaml",
+    public_hoist_packages = {
+        "@next/eslint-plugin-next": ["next.js"],
+        "eslint-config-react-app": ["react"],
+        "eslint@8.28.0": ["react"],
+    },
+    verify_node_modules_ignored = "//:.bazelignore",
+)
+use_repo(npm, "npm")
+
+rules_ts_ext = use_extension(
+    "@aspect_rules_ts//ts:extensions.bzl",
+    "ext",
+    dev_dependency = True,
+)
+rules_ts_ext.deps()
+use_repo(rules_ts_ext, "npm_typescript")

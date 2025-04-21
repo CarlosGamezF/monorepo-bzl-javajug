@@ -1,3 +1,9 @@
 # .bazelrc
 build --define=env=dev
 build:prod --define=env=prod
+
+# passes an argument `--skipLibCheck` to *every* spawn of the TypeScript compiler, tsc
+common --@aspect_rules_ts//ts:skipLibCheck=always
+
+# Required for rules_js
+build --enable_runfiles

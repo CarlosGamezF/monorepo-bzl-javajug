@@ -1,0 +1,32 @@
+{
+  "// To install dependencies with Bazel-managed pnpm, run": "./tools/pnpm install",
+  "private": true,
+  "onlyBuiltDependencies": {
+    "jsdom": "^23.0.1"
+  },
+  "pnpm": {
+    "//packageExtensions": "Fix missing dependencies in npm packages, see https://pnpm.io/package_json#pnpmpackageextensions",
+    "onlyBuiltDependencies": [
+      "react_frontend"
+    ],
+    "packageExtensions": {
+      "@vitejs/plugin-vue": {
+        "peerDependencies": {
+          "vue": "*"
+        }
+      },
+      "eslint-config-next": {
+        "peerDependencies": {
+          "next": "*"
+        }
+      },
+      "postcss-loader": {
+        "peerDependencies": {
+          "postcss-flexbugs-fixes": "*",
+          "postcss-preset-env": "*",
+          "postcss-normalize": "*"
+        }
+      }
+    }
+  }
+}
