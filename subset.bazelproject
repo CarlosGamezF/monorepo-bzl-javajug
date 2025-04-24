@@ -1,0 +1,12 @@
+directories:
+  .bazelbsp
+  java_service
+
+build_flags:
+  #--config=engflow-local
+
+# Automatically includes all relevant targets under the 'directories' above
+derive_targets_from_directories: true
+
+targets:
+  //java_service/...

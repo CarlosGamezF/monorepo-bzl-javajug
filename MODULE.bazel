@@ -1,15 +1,21 @@
 
+## MODULE.bazel
+module(
+    name = "monorepo-bzl-javajug",
+    repo_name = "monorepo-bzl-javajug",
+)
+
 # Java rules for Bazel
 # https://github.com/bazelbuild/rules_java
 bazel_dep(name = "rules_java", version = "8.11.0")
 
 # Rules for testing Java code
-# https://github.com/bazel-contrib/rules_jvm
+# https://github.com/bazel-contrib/contrib_rules_jvm
 bazel_dep(name = "contrib_rules_jvm", version = "0.28.0")
 
 # Transitive Maven artifact resolution and publishing rules for Bazel.
 # https://github.com/bazel-contrib/rules_jvm_external
-bazel_dep(name = "rules_jvm_external", version = "6.7")
+bazel_dep(name = "rules_jvm_external", version = "6.6")
 
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
 
@@ -55,6 +61,7 @@ pip.parse(
     requirements_lock = ":requirements.txt",
 )
 use_repo(pip, "pypi")
+
 
 # Rules for building and testing TypeScript and JavaScript code
 bazel_dep(name = "rules_apple", version = "3.20.1")

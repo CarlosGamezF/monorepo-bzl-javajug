@@ -1,5 +1,7 @@
 # React Webpack Bazel example
 
+source: https://github.com/bazelbuild/examples/tree/main
+
 This example shows how to transpile and bundle a React JS application using SWC for transpilation
 and Webpack for bundling.
 

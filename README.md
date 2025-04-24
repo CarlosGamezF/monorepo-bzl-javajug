@@ -65,6 +65,11 @@ To run tests for a specific service:
 
 Tests are integrated into the Bazel build system, allowing for easy execution with `bazel test`.
 
+##  Bazel by JetBrains (EAP) for IntelliJ IDEA
+This plugin is available as EAP (Early Access Program). This means that it may already be useful, but many corner cases might not be supported yet.
+
+* [IntelliJ IDEA](https://plugins.jetbrains.com/plugin/22977-bazel-eap-)
+
 ## Contributing
 
 Contributions are welcome! Please follow the standard pull request workflow.

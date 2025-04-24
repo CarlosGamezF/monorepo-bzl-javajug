@@ -240,6 +240,7 @@
     "https://bcr.bazel.build/modules/rules_jvm_external/6.0/MODULE.bazel": "37c93a5a78d32e895d52f86a8d0416176e915daabd029ccb5594db422e87c495",
     "https://bcr.bazel.build/modules/rules_jvm_external/6.1/MODULE.bazel": "75b5fec090dbd46cf9b7d8ea08cf84a0472d92ba3585b476f44c326eda8059c4",
     "https://bcr.bazel.build/modules/rules_jvm_external/6.3/MODULE.bazel": "c998e060b85f71e00de5ec552019347c8bca255062c990ac02d051bb80a38df0",
+    "https://bcr.bazel.build/modules/rules_jvm_external/6.6/MODULE.bazel": "153042249c7060536dc95b6bb9f9bb8063b8a0b0cb7acdb381bddbc2374aed55",
     "https://bcr.bazel.build/modules/rules_jvm_external/6.7/MODULE.bazel": "e717beabc4d091ecb2c803c2d341b88590e9116b8bf7947915eeb33aab4f96dd",
     "https://bcr.bazel.build/modules/rules_jvm_external/6.7/source.json": "5426f412d0a7fc6b611643376c7e4a82dec991491b9ce5cb1cfdd25fe2e92be4",
     "https://bcr.bazel.build/modules/rules_kotlin/1.9.0/MODULE.bazel": "ef85697305025e5a61f395d4eaede272a5393cee479ace6686dba707de804d59",
@@ -366,8 +367,8 @@
     },
     "@@aspect_rules_js+//npm:extensions.bzl%pnpm": {
       "general": {
-        "bzlTransitiveDigest": "RT4GLe6lS4PagZoSmv+8r3ARQGkm5Tp5B66Jou+IwiM=",
-        "usagesDigest": "ghGp2CLyk9HPFPtO4w9wtuS7B/KyqfP8QmN+BWloph0=",
+        "bzlTransitiveDigest": "l7lMZgEosrhC7cCrk84RpXVMyWjxRngOR0w6dRvV3bQ=",
+        "usagesDigest": "qX1lD6ysSwOQ1AWzhbjJmvpcnNeFGTSh9+kheG5vNpY=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -545,7 +546,7 @@
     "@@aspect_rules_ts+//ts:extensions.bzl%ext": {
       "general": {
         "bzlTransitiveDigest": "ek638+aDRsPhG/9gUwhbXxhBYwCtgNXCx4gkmaGFqMc=",
-        "usagesDigest": "4RQ6nsMx1+qHuaNHtPlx+cWpb1runcFHT0Vxt2Hxo7Y=",
+        "usagesDigest": "GK5Z8poNqSWIotzrLPJyJ5l11H93gvkMLh2ZNOGEG1c=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -1600,7 +1601,7 @@
     "@@rules_nodejs+//nodejs:extensions.bzl%node": {
       "general": {
         "bzlTransitiveDigest": "6mH+d9usKSnfYPXj6umbdS1DJq28sikqbQWLllnmceE=",
-        "usagesDigest": "ilzUcuBcDscFFxZ2Ln3zqTqPCJ3M3q5VwNrMJJo8Fz0=",
+        "usagesDigest": "9dTBCRelILMj1eD64XBQjnOsdG5aIxWgAS0qKRpoQK8=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -1720,8 +1721,8 @@
     },
     "@@rules_python+//python/extensions:pip.bzl%pip": {
       "general": {
-        "bzlTransitiveDigest": "nA8Au2tooNsGHtS5cJ3XgfQz1f89oFBABMZHtT95Raw=",
-        "usagesDigest": "Y72QTDdJ0LXDCITK48DlgoSSJl1vG32DkS3AeCITZcQ=",
+        "bzlTransitiveDigest": "YMV1/fAAwqT6sblJSBi2Zd9lz7l3OC6021oSL1Mhe/o=",
+        "usagesDigest": "6+A3tFUb6jXI0lCxk409Yo/VRP8Kv1ai2pY8Do4Hk8c=",
         "recordedFileInputs": {
           "@@//requirements.txt": "8f3dec0b7d197b4006066a92e3d3225984e9963f83b9036d8d4ca0574710deb0",
           "@@grpc+//requirements.bazel.txt": "4c8c19a2a8f22108bf29feb5cc2694eb0c7e0c82ba0364df27fe5f5e4d7936e5",

@@ -4,6 +4,11 @@ build:prod --define=env=prod
 
 # passes an argument `--skipLibCheck` to *every* spawn of the TypeScript compiler, tsc
 common --@aspect_rules_ts//ts:skipLibCheck=always
+common --@aspect_rules_ts//ts:default_to_tsc_transpiler
 
 # Required for rules_js
 build --enable_runfiles
+
+# Java Version 21
+common --java_runtime_version=remotejdk_21
+common --tool_java_runtime_version=remotejdk_21
